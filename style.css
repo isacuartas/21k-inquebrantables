@@ -162,12 +162,13 @@ p {
 }
 
 .hero-headline {
-    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-size: clamp(2.2rem, 8.5vw, 5.5rem); /* Scaled down for long words on mobile */
     font-weight: 900;
     margin-bottom: 24px;
     font-style: italic;
     line-height: 1;
     text-transform: uppercase;
+    word-break: break-word;
 }
 
 .hero-subheadline {
@@ -537,7 +538,7 @@ p {
 /* TOP ROW: Text & Image */
 .hero-top {
     display: flex;
-    flex-direction: column-reverse; /* Puts image above text on mobile */
+    flex-direction: column; /* Text first, then image */
     align-items: center;
     width: 100%;
     position: relative;
@@ -553,15 +554,16 @@ p {
 .hero-image-block {
     width: 100%;
     max-width: 500px;
-    margin-bottom: 30px; /* Space between image and text on mobile */
+    margin-top: 30px; /* Space between text and image */
     position: relative;
     z-index: 2;
 }
 
 .hero-image-faded {
     width: 100%;
+    height: auto;
     border-radius: 20px;
-    object-fit: cover;
+    object-fit: contain; /* Prevents terrible zooming/cropping on mobile */
     -webkit-mask-image: linear-gradient(to top, transparent 5%, black 20%);
     mask-image: linear-gradient(to top, transparent 5%, black 20%);
 }
