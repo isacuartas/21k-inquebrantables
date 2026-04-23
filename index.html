@@ -10,6 +10,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
+
+  <!-- =============================================
+       META PIXEL — ID: 948483634050543
+       PageView se dispara aquí (carga de la landing)
+       ViewContent + InitiateCheckout se manejan en main.js
+       ============================================= -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '948483634050543');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=948483634050543&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -78,7 +101,7 @@
             <p class="price-subtitle">Acceso Premium / Plan de 5 Meses (20 Semanas)</p>
           </div>
 
-          <a href="https://www.trainingpeaks.com/training-plans/running/half-marathon/tp-623550/21k-inquebrantables-running-fuerza-y-guia-nutricional-20-semanas" target="_blank" rel="noopener noreferrer" class="btn btn-hero-accent cta-hero-massive">
+          <a id="cta-hero" href="https://www.trainingpeaks.com/training-plans/running/half-marathon/tp-623550/21k-inquebrantables-running-fuerza-y-guia-nutricional-20-semanas" target="_blank" rel="noopener noreferrer" class="btn btn-hero-accent cta-hero-massive">
             INICIA TU PLAN HOY
             <svg viewBox="0 0 24 24" fill="none" class="icon-arrow">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -277,7 +300,7 @@
           <p class="price-duration">Único pago. Acceso Premium por 5 Meses (20 semanas)</p>
         </div>
 
-        <a href="https://www.trainingpeaks.com/training-plans/running/half-marathon/tp-623550/21k-inquebrantables-running-fuerza-y-guia-nutricional-20-semanas" target="_blank" rel="noopener noreferrer" class="btn btn-footer-accent cta-large">
+        <a id="cta-footer" href="https://www.trainingpeaks.com/training-plans/running/half-marathon/tp-623550/21k-inquebrantables-running-fuerza-y-guia-nutricional-20-semanas" target="_blank" rel="noopener noreferrer" class="btn btn-footer-accent cta-large">
           ACCEDER AHORA
         </a>
         <p class="disclaimer">Plan integral de 20 semanas. Acceso inmediato.</p>
